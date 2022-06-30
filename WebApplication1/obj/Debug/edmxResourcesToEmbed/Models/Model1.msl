@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModuloWebModelStoreContainer" CdmEntityContainer="ModuloWebEntities">
+    <EntitySetMapping Name="Acesso">
+      <EntityTypeMapping TypeName="ModuloWebModel.Acesso">
+        <MappingFragment StoreEntitySet="Acesso">
+          <ScalarProperty Name="idAcesso" ColumnName="idAcesso" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="senhaAcesso" ColumnName="senhaAcesso" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Competidor">
+      <EntityTypeMapping TypeName="ModuloWebModel.Competidor">
+        <MappingFragment StoreEntitySet="Competidor">
+          <ScalarProperty Name="idCompetidor" ColumnName="idCompetidor" />
+          <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DataNacional">
+      <EntityTypeMapping TypeName="ModuloWebModel.DataNacional">
+        <MappingFragment StoreEntitySet="DataNacional">
+          <ScalarProperty Name="idNacional" ColumnName="idNacional" />
+          <ScalarProperty Name="anoMundial" ColumnName="anoMundial" />
+          <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+          <ScalarProperty Name="iniCompeticao" ColumnName="iniCompeticao" />
+          <ScalarProperty Name="terminoCompeticao" ColumnName="terminoCompeticao" />
+          <ScalarProperty Name="localCompeticao" ColumnName="localCompeticao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="ModuloWebModel.Estados">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogAcesso">
+      <EntityTypeMapping TypeName="ModuloWebModel.LogAcesso">
+        <MappingFragment StoreEntitySet="LogAcesso">
+          <ScalarProperty Name="idlog" ColumnName="idlog" />
+          <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+          <ScalarProperty Name="dataHoraAcesso" ColumnName="dataHoraAcesso" />
+          <ScalarProperty Name="DataHoraSaida" ColumnName="DataHoraSaida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modalidade">
+      <EntityTypeMapping TypeName="ModuloWebModel.Modalidade">
+        <MappingFragment StoreEntitySet="Modalidade">
+          <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+          <ScalarProperty Name="nomeModalidade" ColumnName="nomeModalidade" />
+          <ScalarProperty Name="descModalidade" ColumnName="descModalidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notas">
+      <EntityTypeMapping TypeName="ModuloWebModel.Notas">
+        <MappingFragment StoreEntitySet="Notas">
+          <ScalarProperty Name="idNota" ColumnName="idNota" />
+          <ScalarProperty Name="idCompetidor" ColumnName="idCompetidor" />
+          <ScalarProperty Name="s1" ColumnName="s1" />
+          <ScalarProperty Name="s2" ColumnName="s2" />
+          <ScalarProperty Name="s3" ColumnName="s3" />
+          <ScalarProperty Name="s4" ColumnName="s4" />
+          <ScalarProperty Name="s5" ColumnName="s5" />
+          <ScalarProperty Name="s6" ColumnName="s6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Noticia">
+      <EntityTypeMapping TypeName="ModuloWebModel.Noticia">
+        <MappingFragment StoreEntitySet="Noticia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="noticia1" ColumnName="noticia" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parceiro">
+      <EntityTypeMapping TypeName="ModuloWebModel.Parceiro">
+        <MappingFragment StoreEntitySet="Parceiro">
+          <ScalarProperty Name="idParceiro" ColumnName="idParceiro" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SkillModalidade">
+      <EntityTypeMapping TypeName="ModuloWebModel.SkillModalidade">
+        <MappingFragment StoreEntitySet="SkillModalidade">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idskill" ColumnName="idskill" />
+          <ScalarProperty Name="idmodalidade" ColumnName="idmodalidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skills">
+      <EntityTypeMapping TypeName="ModuloWebModel.Skills">
+        <MappingFragment StoreEntitySet="Skills">
+          <ScalarProperty Name="idSkill" ColumnName="idSkill" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

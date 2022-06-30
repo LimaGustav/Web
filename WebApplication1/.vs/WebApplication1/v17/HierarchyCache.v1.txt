@@ -1,0 +1,344 @@
+﻿++Solução 'WebApplication1' ‎(1 de 1 projeto)
+i:{00000000-0000-0000-0000-000000000000}:WebApplication1.sln
+++WebApplication1
+i:{00000000-0000-0000-0000-000000000000}:WebApplication1
+++Properties
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\properties\
+++Referências
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++Antlr3.Runtime
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++EntityFramework
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++EntityFramework.SqlServer
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++Microsoft.CSharp
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++Microsoft.Web.Infrastructure
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++Newtonsoft.Json
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.ComponentModel.DataAnnotations
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Configuration
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Core
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Data
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Data.DataSetExtensions
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Drawing
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Net.Http
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Net.Http.Formatting
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Net.Http.WebRequest
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Runtime.Serialization
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Security
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Abstractions
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.ApplicationServices
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Entity
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Helpers
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Http
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Http.WebHost
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Mvc
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Optimization
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Razor
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.Routing
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.WebPages
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.WebPages.Deployment
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Web.WebPages.Razor
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Xml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++System.Xml.Linq
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++WebGrease
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:
+++App_Data
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_data\
+++App_Start
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_start\
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\app_start\
+++BundleConfig.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_start\routeconfig.cs
+++WebApiConfig.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\app_start\webapiconfig.cs
+++Areas
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\
+++Content
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\
+++bootstrap-theme.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap-theme.min.css.map
+++bootstrap.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap.css
+++bootstrap.css.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap.css.map
+++bootstrap.min.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap.min.css
+++bootstrap.min.css.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\bootstrap.min.css.map
+++Site.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\content\site.css
+++Controllers
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\controllers\
+++BaseController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\basecontroller.cs
+++HomeController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\homecontroller.cs
+++LoginController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\logincontroller.cs
+++NoticiasController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\noticiascontroller.cs
+++ParceirosController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\parceiroscontroller.cs
+++ValuesController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\valuescontroller.cs
+++fonts
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\
+++Models
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\models\
+++Model1.edmx
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.edmx
+++Model1.Context.tt
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.context.tt
+++Model1.Designer.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.designer.cs
+++Model1.edmx.diagram
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.edmx.diagram
+++Model1.tt
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.tt
+++Acesso.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\acesso.cs
+++Competidor.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\competidor.cs
+++DataNacional.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\datanacional.cs
+++Estados.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\estados.cs
+++LogAcesso.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\logacesso.cs
+++Modalidade.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\modalidade.cs
+++Model1.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.cs
+++Notas.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\notas.cs
+++Noticia.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\noticia.cs
+++Parceiro.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\parceiro.cs
+++SkillModalidade.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\skillmodalidade.cs
+++Skills.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\skills.cs
+++Scripts
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\
+++bootstrap.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\bootstrap.js
+++bootstrap.min.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\bootstrap.min.js
+++jquery-3.4.1.intellisense.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\jquery-3.4.1.slim.min.map
+++modernizr-2.8.3.js
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\scripts\modernizr-2.8.3.js
+++Views
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\
+++favicon.ico
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\favicon.ico
+++Global.asax
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\global.asax
+++packages.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\packages.config
+++Web.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\web.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\web.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\web.config
+++AssemblyInfo.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\properties\assemblyinfo.cs
+++HelpPage
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\
+++glyphicons-halflings-regular.eot
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\fonts\glyphicons-halflings-regular.woff2
+++Model1.Context.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\models\model1.context.cs
+++Home
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\home\
+++Shared
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\shared\
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\shared\
+++_ViewStart.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\_viewstart.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\_viewstart.cshtml
+++Global.asax.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\global.asax.cs
+++Web.Debug.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\web.debug.config
+++Web.Release.config
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\web.release.config
+++ModelDescriptions
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\
+++SampleGeneration
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\
+++ApiDescriptionExtensions.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\apidescriptionextensions.cs
+++HelpPage.css
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\helppage.css
+++HelpPageAreaRegistration.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\helppagearearegistration.cs
+++HelpPageConfigurationExtensions.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\helppageconfigurationextensions.cs
+++XmlDocumentationProvider.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\xmldocumentationprovider.cs
+++Index.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\home\index.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\index.cshtml
+++_Layout.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\shared\_layout.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\shared\_layout.cshtml
+++Error.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\views\shared\error.cshtml
+++HelpPageConfig.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\app_start\helppageconfig.cs
+++HelpController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\controllers\helpcontroller.cs
+++CollectionModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\collectionmodeldescription.cs
+++ComplexTypeModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\complextypemodeldescription.cs
+++DictionaryModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\dictionarymodeldescription.cs
+++EnumTypeModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\enumtypemodeldescription.cs
+++EnumValueDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\enumvaluedescription.cs
+++IModelDocumentationProvider.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\imodeldocumentationprovider.cs
+++KeyValuePairModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\keyvaluepairmodeldescription.cs
+++ModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\modeldescription.cs
+++ModelDescriptionGenerator.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\modeldescriptiongenerator.cs
+++ModelNameAttribute.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\modelnameattribute.cs
+++ModelNameHelper.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\modelnamehelper.cs
+++ParameterAnnotation.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\parameterannotation.cs
+++ParameterDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\parameterdescription.cs
+++SimpleTypeModelDescription.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\modeldescriptions\simpletypemodeldescription.cs
+++HelpPageApiModel.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\models\helppageapimodel.cs
+++HelpPageSampleGenerator.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\helppagesamplegenerator.cs
+++HelpPageSampleKey.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\helppagesamplekey.cs
+++ImageSample.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\imagesample.cs
+++InvalidSample.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\invalidsample.cs
+++ObjectGenerator.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\objectgenerator.cs
+++SampleDirection.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\sampledirection.cs
+++TextSample.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\samplegeneration\textsample.cs
+++Help
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\
+++DisplayTemplates
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\
+++Api.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\api.cshtml
+++ResourceModel.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\resourcemodel.cshtml
+++ApiGroup.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\apigroup.cshtml
+++CollectionModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\collectionmodeldescription.cshtml
+++ComplexTypeModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\complextypemodeldescription.cshtml
+++DictionaryModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\dictionarymodeldescription.cshtml
+++EnumTypeModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\enumtypemodeldescription.cshtml
+++HelpPageApiModel.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\helppageapimodel.cshtml
+++ImageSample.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\imagesample.cshtml
+++InvalidSample.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\invalidsample.cshtml
+++KeyValuePairModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\keyvaluepairmodeldescription.cshtml
+++ModelDescriptionLink.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\modeldescriptionlink.cshtml
+++Parameters.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\parameters.cshtml
+++Samples.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\samples.cshtml
+++SimpleTypeModelDescription.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\simpletypemodeldescription.cshtml
+++TextSample.cshtml
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\areas\helppage\views\help\displaytemplates\textsample.cshtml
+++ModalidadesController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\modalidadescontroller.cs
+++LogAcessoController.cs
+i:{be253110-d5b3-4844-82b4-bcae8b5955e9}:c:\users\lucas dev\desktop\simulados\websp\webapplication1\controllers\logacessocontroller.cs

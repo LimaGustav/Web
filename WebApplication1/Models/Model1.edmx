@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModuloWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Acesso">
+          <Key>
+            <PropertyRef Name="idAcesso" />
+          </Key>
+          <Property Name="idAcesso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="senhaAcesso" Type="varchar" MaxLength="10" />
+          <Property Name="nome" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Competidor">
+          <Key>
+            <PropertyRef Name="idCompetidor" />
+          </Key>
+          <Property Name="idCompetidor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idModalidade" Type="varchar" MaxLength="6" />
+          <Property Name="Nome" Type="varchar" MaxLength="255" />
+          <Property Name="Estado" Type="char" MaxLength="2" />
+          <Property Name="dataNascimento" Type="date" />
+        </EntityType>
+        <EntityType Name="DataNacional">
+          <Key>
+            <PropertyRef Name="idNacional" />
+          </Key>
+          <Property Name="idNacional" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="anoMundial" Type="smallint" />
+          <Property Name="idModalidade" Type="varchar" MaxLength="6" />
+          <Property Name="iniCompeticao" Type="smalldatetime" />
+          <Property Name="terminoCompeticao" Type="smalldatetime" />
+          <Property Name="localCompeticao" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Estados">
+          <Key>
+            <PropertyRef Name="Sigla" />
+          </Key>
+          <Property Name="Sigla" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="Estado" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="LogAcesso">
+          <Key>
+            <PropertyRef Name="idlog" />
+          </Key>
+          <Property Name="idlog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idusuario" Type="int" />
+          <Property Name="dataHoraAcesso" Type="datetime" />
+          <Property Name="DataHoraSaida" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Modalidade">
+          <Key>
+            <PropertyRef Name="idModalidade" />
+          </Key>
+          <Property Name="idModalidade" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="nomeModalidade" Type="varchar" MaxLength="60" />
+          <Property Name="descModalidade" Type="ntext" />
+        </EntityType>
+        <EntityType Name="Notas">
+          <Key>
+            <PropertyRef Name="idNota" />
+          </Key>
+          <Property Name="idNota" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idCompetidor" Type="int" />
+          <Property Name="s1" Type="int" />
+          <Property Name="s2" Type="int" />
+          <Property Name="s3" Type="int" />
+          <Property Name="s4" Type="int" />
+          <Property Name="s5" Type="int" />
+          <Property Name="s6" Type="int" />
+        </EntityType>
+        <EntityType Name="Noticia">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="data" Type="date" />
+          <Property Name="titulo" Type="varchar" MaxLength="250" />
+          <Property Name="noticia" Type="text" />
+          <Property Name="status" Type="char" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="Parceiro">
+          <Key>
+            <PropertyRef Name="idParceiro" />
+          </Key>
+          <Property Name="idParceiro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="logo" Type="image" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" />
+          <Property Name="Descricao" Type="text" />
+        </EntityType>
+        <EntityType Name="SkillModalidade">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idskill" Type="int" />
+          <Property Name="idmodalidade" Type="varchar" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="Skills">
+          <Key>
+            <PropertyRef Name="idSkill" />
+          </Key>
+          <Property Name="idSkill" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Competidor_Estados">
+          <End Role="Estados" Type="Self.Estados" Multiplicity="0..1" />
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estados">
+              <PropertyRef Name="Sigla" />
+            </Principal>
+            <Dependent Role="Competidor">
+              <PropertyRef Name="Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Competidor_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="Competidor">
+              <PropertyRef Name="idModalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DataNacional_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="DataNacional" Type="Self.DataNacional" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="DataNacional">
+              <PropertyRef Name="idModalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LogAcesso_Acesso">
+          <End Role="Acesso" Type="Self.Acesso" Multiplicity="0..1" />
+          <End Role="LogAcesso" Type="Self.LogAcesso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Acesso">
+              <PropertyRef Name="idAcesso" />
+            </Principal>
+            <Dependent Role="LogAcesso">
+              <PropertyRef Name="idusuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notas_Competidor">
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="0..1" />
+          <End Role="Notas" Type="Self.Notas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Competidor">
+              <PropertyRef Name="idCompetidor" />
+            </Principal>
+            <Dependent Role="Notas">
+              <PropertyRef Name="idCompetidor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillModalidade_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="SkillModalidade" Type="Self.SkillModalidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="SkillModalidade">
+              <PropertyRef Name="idmodalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillModalidade_Skills">
+          <End Role="Skills" Type="Self.Skills" Multiplicity="0..1" />
+          <End Role="SkillModalidade" Type="Self.SkillModalidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Skills">
+              <PropertyRef Name="idSkill" />
+            </Principal>
+            <Dependent Role="SkillModalidade">
+              <PropertyRef Name="idskill" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModuloWebModelStoreContainer">
+          <EntitySet Name="Acesso" EntityType="Self.Acesso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Competidor" EntityType="Self.Competidor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DataNacional" EntityType="Self.DataNacional" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Estados" EntityType="Self.Estados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LogAcesso" EntityType="Self.LogAcesso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Modalidade" EntityType="Self.Modalidade" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notas" EntityType="Self.Notas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Noticia" EntityType="Self.Noticia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parceiro" EntityType="Self.Parceiro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SkillModalidade" EntityType="Self.SkillModalidade" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Skills" EntityType="Self.Skills" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Competidor_Estados" Association="Self.FK_Competidor_Estados">
+            <End Role="Estados" EntitySet="Estados" />
+            <End Role="Competidor" EntitySet="Competidor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Competidor_Modalidade" Association="Self.FK_Competidor_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="Competidor" EntitySet="Competidor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DataNacional_Modalidade" Association="Self.FK_DataNacional_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="DataNacional" EntitySet="DataNacional" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LogAcesso_Acesso" Association="Self.FK_LogAcesso_Acesso">
+            <End Role="Acesso" EntitySet="Acesso" />
+            <End Role="LogAcesso" EntitySet="LogAcesso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notas_Competidor" Association="Self.FK_Notas_Competidor">
+            <End Role="Competidor" EntitySet="Competidor" />
+            <End Role="Notas" EntitySet="Notas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillModalidade_Modalidade" Association="Self.FK_SkillModalidade_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="SkillModalidade" EntitySet="SkillModalidade" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillModalidade_Skills" Association="Self.FK_SkillModalidade_Skills">
+            <End Role="Skills" EntitySet="Skills" />
+            <End Role="SkillModalidade" EntitySet="SkillModalidade" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModuloWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Acesso">
+          <Key>
+            <PropertyRef Name="idAcesso" />
+          </Key>
+          <Property Name="idAcesso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="senhaAcesso" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="LogAcesso" Relationship="Self.FK_LogAcesso_Acesso" FromRole="Acesso" ToRole="LogAcesso" />
+        </EntityType>
+        <EntityType Name="Competidor">
+          <Key>
+            <PropertyRef Name="idCompetidor" />
+          </Key>
+          <Property Name="idCompetidor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idModalidade" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="Nome" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Estado" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="dataNascimento" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Estados" Relationship="Self.FK_Competidor_Estados" FromRole="Competidor" ToRole="Estados" />
+          <NavigationProperty Name="Modalidade" Relationship="Self.FK_Competidor_Modalidade" FromRole="Competidor" ToRole="Modalidade" />
+          <NavigationProperty Name="Notas" Relationship="Self.FK_Notas_Competidor" FromRole="Competidor" ToRole="Notas" />
+        </EntityType>
+        <EntityType Name="DataNacional">
+          <Key>
+            <PropertyRef Name="idNacional" />
+          </Key>
+          <Property Name="idNacional" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="anoMundial" Type="Int16" />
+          <Property Name="idModalidade" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="iniCompeticao" Type="DateTime" Precision="0" />
+          <Property Name="terminoCompeticao" Type="DateTime" Precision="0" />
+          <Property Name="localCompeticao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Modalidade" Relationship="Self.FK_DataNacional_Modalidade" FromRole="DataNacional" ToRole="Modalidade" />
+        </EntityType>
+        <EntityType Name="Estados">
+          <Key>
+            <PropertyRef Name="Sigla" />
+          </Key>
+          <Property Name="Sigla" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Estado" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Competidor" Relationship="Self.FK_Competidor_Estados" FromRole="Estados" ToRole="Competidor" />
+        </EntityType>
+        <EntityType Name="LogAcesso">
+          <Key>
+            <PropertyRef Name="idlog" />
+          </Key>
+          <Property Name="idlog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idusuario" Type="Int32" />
+          <Property Name="dataHoraAcesso" Type="DateTime" Precision="3" />
+          <Property Name="DataHoraSaida" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Acesso" Relationship="Self.FK_LogAcesso_Acesso" FromRole="LogAcesso" ToRole="Acesso" />
+        </EntityType>
+        <EntityType Name="Modalidade">
+          <Key>
+            <PropertyRef Name="idModalidade" />
+          </Key>
+          <Property Name="idModalidade" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nomeModalidade" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="descModalidade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Competidor" Relationship="Self.FK_Competidor_Modalidade" FromRole="Modalidade" ToRole="Competidor" />
+          <NavigationProperty Name="DataNacional" Relationship="Self.FK_DataNacional_Modalidade" FromRole="Modalidade" ToRole="DataNacional" />
+          <NavigationProperty Name="SkillModalidade" Relationship="Self.FK_SkillModalidade_Modalidade" FromRole="Modalidade" ToRole="SkillModalidade" />
+        </EntityType>
+        <EntityType Name="Notas">
+          <Key>
+            <PropertyRef Name="idNota" />
+          </Key>
+          <Property Name="idNota" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idCompetidor" Type="Int32" />
+          <Property Name="s1" Type="Int32" />
+          <Property Name="s2" Type="Int32" />
+          <Property Name="s3" Type="Int32" />
+          <Property Name="s4" Type="Int32" />
+          <Property Name="s5" Type="Int32" />
+          <Property Name="s6" Type="Int32" />
+          <NavigationProperty Name="Competidor" Relationship="Self.FK_Notas_Competidor" FromRole="Notas" ToRole="Competidor" />
+        </EntityType>
+        <EntityType Name="Noticia">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="data" Type="DateTime" Precision="0" />
+          <Property Name="titulo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="noticia1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Parceiro">
+          <Key>
+            <PropertyRef Name="idParceiro" />
+          </Key>
+          <Property Name="idParceiro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="logo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Descricao" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SkillModalidade">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idskill" Type="Int32" />
+          <Property Name="idmodalidade" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Modalidade" Relationship="Self.FK_SkillModalidade_Modalidade" FromRole="SkillModalidade" ToRole="Modalidade" />
+          <NavigationProperty Name="Skills" Relationship="Self.FK_SkillModalidade_Skills" FromRole="SkillModalidade" ToRole="Skills" />
+        </EntityType>
+        <EntityType Name="Skills">
+          <Key>
+            <PropertyRef Name="idSkill" />
+          </Key>
+          <Property Name="idSkill" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SkillModalidade" Relationship="Self.FK_SkillModalidade_Skills" FromRole="Skills" ToRole="SkillModalidade" />
+        </EntityType>
+        <Association Name="FK_LogAcesso_Acesso">
+          <End Role="Acesso" Type="Self.Acesso" Multiplicity="0..1" />
+          <End Role="LogAcesso" Type="Self.LogAcesso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Acesso">
+              <PropertyRef Name="idAcesso" />
+            </Principal>
+            <Dependent Role="LogAcesso">
+              <PropertyRef Name="idusuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Competidor_Estados">
+          <End Role="Estados" Type="Self.Estados" Multiplicity="0..1" />
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estados">
+              <PropertyRef Name="Sigla" />
+            </Principal>
+            <Dependent Role="Competidor">
+              <PropertyRef Name="Estado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Competidor_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="Competidor">
+              <PropertyRef Name="idModalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notas_Competidor">
+          <End Role="Competidor" Type="Self.Competidor" Multiplicity="0..1" />
+          <End Role="Notas" Type="Self.Notas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Competidor">
+              <PropertyRef Name="idCompetidor" />
+            </Principal>
+            <Dependent Role="Notas">
+              <PropertyRef Name="idCompetidor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DataNacional_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="DataNacional" Type="Self.DataNacional" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="DataNacional">
+              <PropertyRef Name="idModalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillModalidade_Modalidade">
+          <End Role="Modalidade" Type="Self.Modalidade" Multiplicity="0..1" />
+          <End Role="SkillModalidade" Type="Self.SkillModalidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modalidade">
+              <PropertyRef Name="idModalidade" />
+            </Principal>
+            <Dependent Role="SkillModalidade">
+              <PropertyRef Name="idmodalidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SkillModalidade_Skills">
+          <End Role="Skills" Type="Self.Skills" Multiplicity="0..1" />
+          <End Role="SkillModalidade" Type="Self.SkillModalidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Skills">
+              <PropertyRef Name="idSkill" />
+            </Principal>
+            <Dependent Role="SkillModalidade">
+              <PropertyRef Name="idskill" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModuloWebEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Acesso" EntityType="Self.Acesso" />
+          <EntitySet Name="Competidor" EntityType="Self.Competidor" />
+          <EntitySet Name="DataNacional" EntityType="Self.DataNacional" />
+          <EntitySet Name="Estados" EntityType="Self.Estados" />
+          <EntitySet Name="LogAcesso" EntityType="Self.LogAcesso" />
+          <EntitySet Name="Modalidade" EntityType="Self.Modalidade" />
+          <EntitySet Name="Notas" EntityType="Self.Notas" />
+          <EntitySet Name="Noticia" EntityType="Self.Noticia" />
+          <EntitySet Name="Parceiro" EntityType="Self.Parceiro" />
+          <EntitySet Name="SkillModalidade" EntityType="Self.SkillModalidade" />
+          <EntitySet Name="Skills" EntityType="Self.Skills" />
+          <AssociationSet Name="FK_LogAcesso_Acesso" Association="Self.FK_LogAcesso_Acesso">
+            <End Role="Acesso" EntitySet="Acesso" />
+            <End Role="LogAcesso" EntitySet="LogAcesso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Competidor_Estados" Association="Self.FK_Competidor_Estados">
+            <End Role="Estados" EntitySet="Estados" />
+            <End Role="Competidor" EntitySet="Competidor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Competidor_Modalidade" Association="Self.FK_Competidor_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="Competidor" EntitySet="Competidor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notas_Competidor" Association="Self.FK_Notas_Competidor">
+            <End Role="Competidor" EntitySet="Competidor" />
+            <End Role="Notas" EntitySet="Notas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DataNacional_Modalidade" Association="Self.FK_DataNacional_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="DataNacional" EntitySet="DataNacional" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillModalidade_Modalidade" Association="Self.FK_SkillModalidade_Modalidade">
+            <End Role="Modalidade" EntitySet="Modalidade" />
+            <End Role="SkillModalidade" EntitySet="SkillModalidade" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SkillModalidade_Skills" Association="Self.FK_SkillModalidade_Skills">
+            <End Role="Skills" EntitySet="Skills" />
+            <End Role="SkillModalidade" EntitySet="SkillModalidade" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModuloWebModelStoreContainer" CdmEntityContainer="ModuloWebEntities">
+          <EntitySetMapping Name="Acesso">
+            <EntityTypeMapping TypeName="ModuloWebModel.Acesso">
+              <MappingFragment StoreEntitySet="Acesso">
+                <ScalarProperty Name="idAcesso" ColumnName="idAcesso" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="senhaAcesso" ColumnName="senhaAcesso" />
+                <ScalarProperty Name="nome" ColumnName="nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Competidor">
+            <EntityTypeMapping TypeName="ModuloWebModel.Competidor">
+              <MappingFragment StoreEntitySet="Competidor">
+                <ScalarProperty Name="idCompetidor" ColumnName="idCompetidor" />
+                <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="dataNascimento" ColumnName="dataNascimento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DataNacional">
+            <EntityTypeMapping TypeName="ModuloWebModel.DataNacional">
+              <MappingFragment StoreEntitySet="DataNacional">
+                <ScalarProperty Name="idNacional" ColumnName="idNacional" />
+                <ScalarProperty Name="anoMundial" ColumnName="anoMundial" />
+                <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+                <ScalarProperty Name="iniCompeticao" ColumnName="iniCompeticao" />
+                <ScalarProperty Name="terminoCompeticao" ColumnName="terminoCompeticao" />
+                <ScalarProperty Name="localCompeticao" ColumnName="localCompeticao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estados">
+            <EntityTypeMapping TypeName="ModuloWebModel.Estados">
+              <MappingFragment StoreEntitySet="Estados">
+                <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LogAcesso">
+            <EntityTypeMapping TypeName="ModuloWebModel.LogAcesso">
+              <MappingFragment StoreEntitySet="LogAcesso">
+                <ScalarProperty Name="idlog" ColumnName="idlog" />
+                <ScalarProperty Name="idusuario" ColumnName="idusuario" />
+                <ScalarProperty Name="dataHoraAcesso" ColumnName="dataHoraAcesso" />
+                <ScalarProperty Name="DataHoraSaida" ColumnName="DataHoraSaida" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Modalidade">
+            <EntityTypeMapping TypeName="ModuloWebModel.Modalidade">
+              <MappingFragment StoreEntitySet="Modalidade">
+                <ScalarProperty Name="idModalidade" ColumnName="idModalidade" />
+                <ScalarProperty Name="nomeModalidade" ColumnName="nomeModalidade" />
+                <ScalarProperty Name="descModalidade" ColumnName="descModalidade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notas">
+            <EntityTypeMapping TypeName="ModuloWebModel.Notas">
+              <MappingFragment StoreEntitySet="Notas">
+                <ScalarProperty Name="idNota" ColumnName="idNota" />
+                <ScalarProperty Name="idCompetidor" ColumnName="idCompetidor" />
+                <ScalarProperty Name="s1" ColumnName="s1" />
+                <ScalarProperty Name="s2" ColumnName="s2" />
+                <ScalarProperty Name="s3" ColumnName="s3" />
+                <ScalarProperty Name="s4" ColumnName="s4" />
+                <ScalarProperty Name="s5" ColumnName="s5" />
+                <ScalarProperty Name="s6" ColumnName="s6" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Noticia">
+            <EntityTypeMapping TypeName="ModuloWebModel.Noticia">
+              <MappingFragment StoreEntitySet="Noticia">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="data" ColumnName="data" />
+                <ScalarProperty Name="titulo" ColumnName="titulo" />
+                <ScalarProperty Name="noticia1" ColumnName="noticia" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parceiro">
+            <EntityTypeMapping TypeName="ModuloWebModel.Parceiro">
+              <MappingFragment StoreEntitySet="Parceiro">
+                <ScalarProperty Name="idParceiro" ColumnName="idParceiro" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SkillModalidade">
+            <EntityTypeMapping TypeName="ModuloWebModel.SkillModalidade">
+              <MappingFragment StoreEntitySet="SkillModalidade">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idskill" ColumnName="idskill" />
+                <ScalarProperty Name="idmodalidade" ColumnName="idmodalidade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Skills">
+            <EntityTypeMapping TypeName="ModuloWebModel.Skills">
+              <MappingFragment StoreEntitySet="Skills">
+                <ScalarProperty Name="idSkill" ColumnName="idSkill" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
